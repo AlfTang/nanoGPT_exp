@@ -10,7 +10,7 @@ import requests
 import numpy as np
 import pandas as pd
 
-input_file_path = os.path.join(os.path.dirname(__file__), 'ceo_words.xlsx')
+input_file_path = os.path.join(os.path.dirname(__file__), 'CEO_words_expanded.xlsx')
 df = pd.read_excel(input_file_path)
 data = "\n\n".join(x + '\n' + y for x, y in zip(df['主題'],df['內容']))
 # get all the unique characters that occur in this text
